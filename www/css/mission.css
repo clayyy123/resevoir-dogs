@@ -1,19 +1,89 @@
 .wrapper {
   width: 100%;
-  /* display: flex; */
-  /* position: relative; */
+  display: flex;
 }
 
 .brown {
-  /* position: absolute; */
+  position: relative;
+  flex: 0 0 50%;
 }
 
 .brown-img {
   width: 41.5rem;
+  height: 55rem;
+  position: absolute;
+  top: -17rem;
+  display: flex;
+  z-index: 10;
 }
 
 .brown-img img {
   width: 100%;
   object-fit: cover;
   height: 100%;
+}
+
+.brown-img div {
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.page {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 6.3rem;
+  color: #c4090a;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.img-description {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.6rem;
+  color: #000000;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  padding-top: 1rem;
+  border-top: 0.1rem solid black;
+}
+
+.alias {
+  flex: 1;
+}
+
+.alias-form {
+  position: relative;
+}
+
+.form-select {
+  border: 0.1rem solid rgb(247, 247, 246);
+  padding: 2rem 3rem;
+  border-radius: 0;
+  background-color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.6rem;
+  color: #afafaf;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  width: 45rem;
+  height: 8rem;
+}
+
+.button {
+  margin-left: 3rem;
+  width: 12rem;
+  height: 5.8rem;
+  background-color: #c4090a;
+  font-size: 1.1rem;
+  letter-spacing: 0.3rem;
+  line-height: 3.2rem;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-weight: 600;
 }

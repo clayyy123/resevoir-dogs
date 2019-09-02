@@ -7,10 +7,6 @@
 
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       type="text/css"
       href="//fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800"
@@ -25,8 +21,8 @@
   <body>
     <nav>
       <div class="logo-wrapper">
-        <img src="/img/logo.png" class="logo logo-items" />
-        <img src="/img/line.png" class="line logo-items" />
+        <img src="./img/logo.png" class="logo logo-items" />
+        <img src="./img/line.png" class="line logo-items" />
         <a href="#" class="nav-item logo-items">ABR x RDI</a>
       </div>
       <div class="nav-items-wrapper">
@@ -35,75 +31,79 @@
         <a href="#" class="nav-items">LATTE ART REQUEST</a>
       </div>
     </nav>
-    <div class="banner-container">
-      <div class="banner-text-wrapper">
-        <h1>ALL BOATS RISE </br>
-           -- RESEVOIR DOGS </br>
-           INTERNATIONAL</br> 
-           DEVELOPMENT TEST</h1>
-      </div>
-    <hr>
-      <div class="banner-wrapper">
-        <img src="/img/banner.png" />
-      </div>
-    </div>
-    <div class="arrow-container">
-      <img src="/img/arrow.png"/>
-    </div>
-    <div class="section">
-      <div class="grey"></div>
-      <div class="section-text">
-        <h1>WE'RE ON A MISSION</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur </br>
-          adipiscing elit. Nulla Luctus varius nibh</br>
-          vitae sodales. Cras sit amet sapien </br>
-          malesuada, sollicitidun turpis et, </br>
-          finibus metus. Maecenas convallis ex ut </br>
-          scelerisque sadales. Nulla venenatis risus </br>
-          pulvinar odio egestas tincidunt. Vestibulum </br>
-          rutrum, risus tempus ullamcorper. 
-        </p>
-      </div>
-      <div class="section-image">
-        <img src="/img/video.png"/>
-      </div>
-    </div>
-    
-    <div class="wrapper">
-      <div class="brown">
-        <div class="brown-img">
-          <img src="/img/brown.png"/>
+    <div class="container">
+      <div class="banner-container">
+        <div class="banner-text-wrapper">
+          <h1>ALL BOATS RISE </br>
+            -- RESEVOIR DOGS </br>
+            INTERNATIONAL</br> 
+            DEVELOPMENT TEST</h1>
+        </div>
+      <hr>
+        <div class="banner-wrapper">
+          <img src="./img/banner.png" />
         </div>
       </div>
-      <h1>Reservoir Dogs Challenge</h1>
-      <div data-controller="AliasMapper">
-        <form method="GET" data-target="AliasMapper.form">
-          <select name="alias" data-target="AliasMapper.chosen" required>
-            <option value="">--- Choose Alias ---</option>
-            <option value="Mr. White">Mr. White</option>
-            <option value="Mr. Orange">Mr. Orange</option>
-            <option value="Mr. Blonde">Mr. Blonde</option>
-            <option value="Mr. Pink">Mr. Pink</option>
-            <option value="Mr. Blue">Mr. Blue</option>
-            <option value="Mr. Brown">Mr. Brown</option>
-            <option value="Mr. Purple">Mr. Purple</option>
-          </select>
-          <input
-            type="submit"
-            value="Reveal Name"
-            data-action="click->AliasMapper#getChosen"
-          />
-        </form>
-
-        <!-- Display Alias mapping result -->
-        <div class="output">
-          <h3 class="label">Output:</h3>
-          Alias <span class="name" data-target="AliasMapper.alias">x</span> maps
-          to <span class="color" data-target="AliasMapper.name">y</span>.
+      <div class="arrow-container">
+        <img src="./img/arrow.png"/>
+      </div>
+      <div class="section">
+        <div class="grey"></div>
+        <div class="section-text">
+          <h1>WE'RE ON A MISSION</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur </br>
+            adipiscing elit. Nulla Luctus varius nibh</br>
+            vitae sodales. Cras sit amet sapien </br>
+            malesuada, sollicitidun turpis et, </br>
+            finibus metus. Maecenas convallis ex ut </br>
+            scelerisque sadales. Nulla venenatis risus </br>
+            pulvinar odio egestas tincidunt. Vestibulum </br>
+            rutrum, risus tempus ullamcorper. 
+          </p>
+        </div>
+        <div class="section-image">
+          <img src="./img/video.png"/>
         </div>
       </div>
-    </div>
+      <div class="wrapper">
+        <div class="brown">
+          <div class="brown-img">
+            <div>
+                <h1 class="page">01</h1><p class="img-description">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            </div>
+            <img src="./img/brown.png"/>
+          </div>
+        </div>
+        <div class="alias" data-controller="AliasMapper">
+          <form method="GET" data-target="AliasMapper.form" class="alias-form">
+            <select name="alias" data-target="AliasMapper.chosen" class="form-select" required>
+              <option value="">Pick a name here</option>
+              <option value="Mr. White">Mr. White</option>
+              <option value="Mr. Orange">Mr. Orange</option>
+              <option value="Mr. Blonde">Mr. Blonde</option>
+              <option value="Mr. Pink">Mr. Pink</option>
+              <option value="Mr. Blue">Mr. Blue</option>
+              <option value="Mr. Brown">Mr. Brown</option>
+              <option value="Mr. Purple">Mr. Purple</option>
+            </select>
+            <input
+              type="submit"
+              value="Submit"
+              class="button"
+              data-action="click->AliasMapper#getChosen"
+            />
+          </form>
 
+          <!-- Display Alias mapping result -->
+          <div class="output">
+            <h3 class="label">Output:</h3>
+            Alias <span class="name" data-target="AliasMapper.alias">x</span> maps
+            to <span class="color" data-target="AliasMapper.name">y</span>.
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
     <script src="node_modules/stimulus/dist/stimulus.umd.js"></script>
     <script src="js/AliasMapper.js"></script>
     <script src="js/app.js"></script>

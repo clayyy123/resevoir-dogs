@@ -5,6 +5,9 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  padding-left: 8rem;
+}
 /* .wrapper [data-controller='AbrPersonFavoriteColor'] {
   max-width: 500px;
 } */
