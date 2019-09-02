@@ -1,0 +1,47 @@
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  display: flex;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 0 0 20%;
+  padding: 1.5rem;
+}
+
+.logo-items {
+  padding: 0.5rem;
+}
+
+.nav-items-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.nav-items {
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  line-height: 5rem;
+  color: #000000;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  margin-right: 4.5rem;
+}
+
+.nav-item {
+  font-size: 2.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7rem;
+  color: #000000;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}

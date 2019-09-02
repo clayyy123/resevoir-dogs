@@ -1,0 +1,36 @@
+.banner-container {
+  display: flex;
+  position: relative;
+}
+
+.banner-text-wrapper {
+  flex: 0 0 20%;
+  padding: 1.5rem;
+}
+
+.banner-text-wrapper h1 {
+  position: absolute;
+  font-size: 5.3rem;
+  letter-spacing: 0.5rem;
+  line-height: 6rem;
+  color: #000913;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  margin: 0;
+  margin-top: 14rem;
+  margin-left: 5rem;
+}
+
+.banner-wrapper {
+  flex: 1;
+}
+
+.banner-wrapper img {
+  object-fit: cover;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}

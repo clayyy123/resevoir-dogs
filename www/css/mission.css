@@ -1,0 +1,19 @@
+.wrapper {
+  width: 100%;
+  /* display: flex; */
+  /* position: relative; */
+}
+
+.brown {
+  /* position: absolute; */
+}
+
+.brown-img {
+  width: 41.5rem;
+}
+
+.brown-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
