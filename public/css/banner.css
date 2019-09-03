@@ -75,6 +75,12 @@ hr {
   }
 }
 
+@media (max-width: 1200px) {
+  .banner-header {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 1287px) {
   .banner-header {
     font-size: 3.8rem;
