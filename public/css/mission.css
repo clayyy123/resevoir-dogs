@@ -5,7 +5,7 @@
 
 .brown {
   position: relative;
-  flex: 0 0 50%;
+  flex: 0 0 35%;
 }
 
 .brown-img {
@@ -15,6 +15,7 @@
   top: -17rem;
   display: flex;
   z-index: 10;
+  margin-bottom: 10rem;
 }
 
 .brown-img img {
@@ -54,10 +55,14 @@
 
 .alias {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .alias-form {
-  position: relative;
+  margin-top: 15rem;
 }
 
 .form-select {
