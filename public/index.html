@@ -33,13 +33,21 @@
     </nav>
     <div class="container">
       <div class="banner-container">
-        <div class="banner-text-wrapper">
-          <h1>ALL BOATS RISE </br>
-            -- RESEVOIR DOGS </br>
-            INTERNATIONAL</br> 
-            DEVELOPMENT TEST</h1>
+        <div class="banner-holder">
+          <div class="banner-text-wrapper">
+            <h1 class="banner-header">ALL BOATS RISE </br>
+              &#8212; RESEVOIR DOGS </br>
+              INTERNATIONAL</br> 
+              DEVELOPMENT TEST
+            </h1>
+            <hr>
+            <h1 class="banner-header-two">
+              We're here to do marketing and </br>
+              perfect a diamonds heists. Any Questions? </br>
+              (And make some sweet latte art)
+            </h1>
+          </div>
         </div>
-      <hr>
         <div class="banner-wrapper">
           <img src="./img/banner.png" />
         </div>
@@ -95,10 +103,10 @@
           </form>
 
           <!-- Display Alias mapping result -->
-          <div class="output">
-            <h3 class="label">Output:</h3>
-            Alias <span class="name" data-target="AliasMapper.alias">x</span> maps
-            to <span class="color" data-target="AliasMapper.name">y</span>.
+          <div data-target="AliasMapper.output">
+           <span class="name output-hidden" data-target="AliasMapper.alias"></span></br>
+           <span class="output-hidden" data-target="AliasMapper.is"> is </span></br>
+           <span class="color output-hidden" data-target="AliasMapper.name">.</span>
           </div>
         </div>
       </div>

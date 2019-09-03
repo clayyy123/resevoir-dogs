@@ -21,7 +21,7 @@ nav {
   display: flex;
   align-items: center;
   flex: 1;
-  padding: 1.5rem 1.5rem 1.5rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
 }
 
 .nav-items {
@@ -44,4 +44,75 @@ nav {
   font-weight: 800;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
+}
+
+/* BREAKPOINTS FOR THE NAV BAR */
+@media (max-width: 1364px) {
+  .nav-item {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1287px) {
+  .nav-item {
+    font-size: 1.5rem;
+  }
+  .line {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-item {
+    font-size: 0.9rem;
+  }
+  .line {
+    height: 2.3rem;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .nav-items {
+    font-size: 0.3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .logo-wrapper {
+    flex: 0 0 30%;
+  }
+
+  .line {
+    height: 8rem;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .nav-items {
+    font-size: 2rem;
+    margin-right: 6rem;
+  }
+}
+
+@media (min-width: 1640px) {
+  .logo-wrapper {
+    flex: 0 0 27%;
+  }
+
+  .line {
+    height: 6rem;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .nav-items {
+    font-size: 1.5rem;
+    margin-right: 4rem;
+  }
 }

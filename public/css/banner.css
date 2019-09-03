@@ -4,12 +4,16 @@
 }
 
 .banner-text-wrapper {
-  flex: 0 0 20%;
   padding: 1.5rem;
+  position: absolute;
+  margin-top: 14rem;
 }
 
-.banner-text-wrapper h1 {
-  position: absolute;
+.banner-holder {
+  flex: 0 0 20%;
+}
+
+.banner-header {
   font-size: 5.3rem;
   letter-spacing: 0.5rem;
   line-height: 6rem;
@@ -17,20 +21,125 @@
   font-family: 'Open Sans';
   font-weight: 800;
   margin: 0;
-  margin-top: 14rem;
 }
 
 .banner-wrapper {
   flex: 1;
   overflow: hidden;
+  background-image: url('../img/banner.png');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .banner-wrapper img {
-  object-fit: cover;
+  visibility: hidden;
 }
 
 .arrow-container {
   display: flex;
   justify-content: center;
   margin: 3rem;
+}
+
+hr {
+  position: relative;
+  width: 50%;
+  margin: 4.5rem 0;
+  z-index: 10;
+  border-color: black;
+}
+
+.banner-header-two {
+  font-size: 2.1rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.7rem;
+  color: #000913;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 1364px) {
+  .banner-header {
+    font-size: 4.3rem;
+  }
+
+  .banner-header-two {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1287px) {
+  .banner-header {
+    font-size: 3.8rem;
+  }
+
+  .banner-header-two {
+    font-size: 1.3rem;
+  }
+
+  .banner-text-wrapper {
+    margin-top: 11rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-wrapper {
+    background-position: center;
+  }
+
+  .banner-header {
+    font-size: 2.8rem;
+  }
+
+  .banner-header-two {
+    font-size: 1rem;
+  }
+
+  .banner-text-wrapper {
+    margin-top: 11rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .banner-wrapper {
+    background-position: center;
+    background-color: rgb(197, 3, 3);
+  }
+
+  .banner-text-wrapper {
+    padding: 1.5rem;
+    position: absolute;
+    margin-top: 7rem;
+    left: 8rem;
+  }
+
+  .banner-header {
+    font-size: 6rem;
+    letter-spacing: 0.8rem;
+    line-height: 7.5rem;
+  }
+
+  .banner-header-two {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1640px) {
+  .banner-text-wrapper {
+    padding: 1.5rem;
+    position: absolute;
+    margin-top: 7rem;
+    left: 10rem;
+  }
+
+  hr {
+    width: 60%;
+  }
 }

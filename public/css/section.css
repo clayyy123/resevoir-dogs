@@ -6,7 +6,7 @@
 }
 
 .grey {
-  width: 60%;
+  width: 75%;
   height: 60rem;
   background-color: rgb(247, 247, 246);
   position: absolute;
@@ -23,9 +23,12 @@
 .section-image {
   margin-top: 5rem;
   padding: 2rem;
+  width: 56%;
 }
 
 .section-image img {
+  width: 100%;
+  height: auto;
 }
 
 .section-text h1 {
@@ -38,7 +41,6 @@
 }
 
 .section-text p {
-  width: 36rem;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   line-height: 2.6rem;
@@ -46,4 +48,67 @@
   font-family: 'Open Sans';
   font-weight: 400;
   white-space: nowrap;
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 1287px) {
+  .section-image {
+    width: 53%;
+  }
+
+  .section-text p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .section-text h1 {
+    font-size: 2rem;
+  }
+
+  .grey {
+    width: 77%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-text {
+    padding: 0;
+  }
+
+  .section-text p {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.6rem;
+  }
+
+  .section-image {
+    width: 65%;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .section-text h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .section-text h1 {
+    font-size: 4rem;
+  }
+
+  .section-text p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .grey {
+    height: 80rem;
+  }
 }

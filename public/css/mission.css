@@ -15,13 +15,13 @@
   top: -17rem;
   display: flex;
   z-index: 10;
-  margin-bottom: 10rem;
 }
 
 .brown-img img {
   width: 100%;
   object-fit: cover;
   height: 100%;
+  margin-bottom: 10rem;
 }
 
 .brown-img div {
@@ -66,7 +66,7 @@
 }
 
 .form-select {
-  border: 0.1rem solid rgb(247, 247, 246);
+  border: 0.1rem solid black;
   padding: 2rem 3rem;
   border-radius: 0;
   background-color: white;
@@ -78,6 +78,7 @@
   font-weight: 400;
   width: 45rem;
   height: 8rem;
+  margin-bottom: 5rem;
 }
 
 .button {
@@ -91,4 +92,113 @@
   color: #ffffff;
   font-family: 'Open Sans';
   font-weight: 600;
+}
+
+.output-hidden {
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  opacity: 0;
+}
+
+.output-show {
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  opacity: 1;
+}
+
+.output-hidden,
+.output-show {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.6rem;
+  color: black;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1364px) {
+  .brown-img img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .alias-form {
+    margin-top: 12rem;
+  }
+
+  .form-select {
+    height: 7rem;
+  }
+
+  .img-description,
+  .page {
+    font-size: 1.1rem;
+  }
+
+  .brown-img {
+    top: -12rem;
+  }
+}
+
+@media (max-width: 1287px) {
+  .brown-img img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .brown-img {
+    top: -10rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brown-img img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .brown-img {
+    top: -10rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brown-img {
+    top: 0;
+  }
+
+  .brown {
+    flex: 0 0 50%;
+  }
+
+  .form-select {
+    width: 37rem;
+    margin-bottom: 2rem;
+  }
+
+  .alias-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .brown-img img {
+    width: 120%;
+    height: 120%;
+  }
+
+  .brown-img {
+    top: -26rem;
+  }
 }
